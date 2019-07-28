@@ -38,13 +38,16 @@ class ViewController: UIViewController {
             
             let nextView = segue.destination as! SecondViewController
             
-            nextView.selectedimage = slideView.image
+           nextView.selectedimage = slideView.image
     
         }
     }
     
     @IBAction func tapImage(_ sender: UITapGestureRecognizer) {
         
+        if timer != nil {
+            timer.invalidate()
+        }
         performSegue(withIdentifier: "result", sender: nil)
     }
     

@@ -19,7 +19,8 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        expandedImage.image = selectedimage
+       expandedImage.image = selectedimage
+    
         
     }
     
