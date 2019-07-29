@@ -47,6 +47,13 @@ class ViewController: UIViewController {
         
         if timer != nil {
             timer.invalidate()
+            
+            timer = nil
+            startstop.setTitle("再生", for: .normal)
+            
+            proceedbutton.isEnabled = true
+            backbutton.isEnabled = true
+            
         }
         performSegue(withIdentifier: "result", sender: nil)
     }
